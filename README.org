@@ -2,5 +2,5 @@
 
 1. 安装Scrapy ~pip install scrapy~
 1. 创建一个Scrapy项目 ~scrapy startproject test001~
-1. 生成一个命名为example的爬虫 ~scrapy genspider example example.com~
+1. 生成一个命名为example的爬虫  ~cd test001 && scrapy genspider example example.com~
 1. 执行命名为example的爬虫 ~scrapy crawl example~
