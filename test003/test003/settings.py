@@ -14,6 +14,9 @@ BOT_NAME = 'test003'
 SPIDER_MODULES = ['test003.spiders']
 NEWSPIDER_MODULE = 'test003.spiders'
 
+# 图片存储位置
+IMAGES_STORE = '/tmp/spider.test003'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'test003 (+http://www.yourdomain.com)'
@@ -64,9 +67,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'test003.pipelines.Test003Pipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'test003.pipelines.Test003Pipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
