@@ -9,8 +9,3 @@
 class DianpingPipeline(object):
     def process_item(self, item, spider):
         return item
-
-class StreamPipeline(object):
-    def process_item(self, item, spider):
-        print('{},{},{}'.format(item['name'], item['branch'], item['stars']))
-        return item
